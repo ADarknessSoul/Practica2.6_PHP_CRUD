@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceso Usuarios</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <a class="mt-2 ml-2 text-uppercase" href="Administrador.php">Ingresar como administrador</a>
+  
+  <form action="script_acceso_usuario.php" method="post" name="frm_ingreso" id="frm_ingreso">
+      <table width="500" align="center">
+        <tr>
+          <td colspan="2"><div align="center" class="Estilo17"><h3>FORMULARIO DE ACCESO</h3> </div></td>
+        </tr>
+        <tr>
+          <td colspan="2"><div align="justify" class="Estilo20"></div></td>
+        </tr>
+        <tr>
+          <td width="33%"><div align="right"><span class="Estilo16">Usuario: </span></div></td>
+          <td width="67%"><div align="left">
+              <input name="usuario" type="text" id="usuario" size="20" />
+          </div></td>
+        </tr>
+        <tr>
+          <td><div align="right"><span class="Estilo16">Contrase&ntilde;a: </span></div></td>
+          <td><div align="left">
+              <input name="contrasena" type="password" id="contrasena" size="20" />
+          </div></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><div align="left">
+              <input class="btn btn-primary" type="submit" name="Submit" value="Ingresar"/>
+          </div></td>
+        </tr>
+      </table>
+    </form>
+
+    <p class="text-center mt-3">¿Aun no tienes una cuenta?</p>
+    <div class="text-center">
+
+      <a class="link-primary" href="Crear_cuenta.php">Crear cuenta</a>
+
+    </div>
+
+
+    <script src="./js/bootstrap.min.js"></script>
+
+</body>
+</html>
